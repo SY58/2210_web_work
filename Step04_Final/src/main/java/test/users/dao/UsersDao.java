@@ -19,6 +19,74 @@ public class UsersDao {
 		return dao;
 	}
 	
+	//개인정보(가입정보)를 삭제하는 메소드
+	public boolean delete(String id) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int rowCount = 0;
+		try {
+			conn = new DbcpBean().getConn();
+			String sql = "DELETE FROM users"
+					+ " WHERE id=?";
+			pstmt = conn.prepareStatement(sql);
+			//?에 바인딩
+			pstmt.setString(1, id);
+			//INSERT or UPDATE or DELETE문을 수행하고 수정,삭제,추가된 row의 개수 리턴
+			rowCount = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e2) {
+			}
+		}
+
+		if (rowCount > 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}	
+	
+	//개인정보(이메일)를 수정하는 메소드
+	public boolean update(UsersDto dto) {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int rowCount = 0;
+		try {
+			conn = new DbcpBean().getConn();
+			String sql = "UPDATE users"
+					+ " SET email=?"
+					+ " WHERE id=?";
+			pstmt = conn.prepareStatement(sql);
+			//?에 바인딩
+			pstmt.setString(1, dto.getEmail());
+			pstmt.setString(2, dto.getId());
+			//INSERT or UPDATE or DELETE문을 수행하고 수정,삭제,추가된 row의 개수 리턴
+			rowCount = pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e2) {
+			}
+		}
+
+		if (rowCount > 0) {
+			return true;
+		} else {
+			return false;
+		}
+	}	
+	
 	//비밀번호를 수정하는 메소드
 	public boolean updatePwd(UsersDto dto) {
 		Connection conn = null;
