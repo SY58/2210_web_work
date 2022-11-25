@@ -19,17 +19,10 @@
 	</jsp:include>
 
 	<div class="container">
-		<%if(id != null) {%>
-			<p>
-				<a href="${pageContext.request.contextPath }/users/private/info.jsp"><%=id %></a>님 로그인중....
-				<a href="${pageContext.request.contextPath }/users/logout.jsp">로그아웃</a>
-			</p>
-		<%}else{ %>
-			<a href="${pageContext.request.contextPath }/users/loginform.jsp">로그인</a>
-		<%} %>
-		<h1 style="margin-bottom: 20px;">인덱스 페이지입니다.</h1>
 		
-				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+		<h1 style="margin: 20px 0px 20px;">인덱스 페이지입니다.</h1>
+		
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 		  <div class="carousel-indicators">
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

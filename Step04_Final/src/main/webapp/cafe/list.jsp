@@ -56,6 +56,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="cafe" name="thisPage"/>
+	</jsp:include>
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/cafe/private/insertform.jsp">새글 작성</a>
 		<h3>카페 글 목록입니다.</h3>
