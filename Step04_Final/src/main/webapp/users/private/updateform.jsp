@@ -61,7 +61,7 @@
 			<button type="submit">업로드</button>
 		</form>
 	</div>
-	<!-- gura_util.js 로딩 -->
+	<!-- sy_util.js 로딩 -->
 	<script src="${pageContext.request.contextPath }/js/sy_util.js"></script>
 	<script>
 		//프로필 이미지 링크를 클릭하면 
@@ -74,7 +74,7 @@
       	document.querySelector("#image").addEventListener("change", function(){
         	//ajax 전송할 폼의 참조값 얻어오기
         	const form=document.querySelector("#imageForm");
-        	//gura_util.js 에 있는 함수를 이용해서 ajax 전송하기 
+        	//sy_util.js 에 있는 함수를 이용해서 ajax 전송하기 
          	ajaxFormPromise(form)
          	.then(function(response){
 	            return response.json();
