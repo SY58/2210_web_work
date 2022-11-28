@@ -32,5 +32,6 @@
 			<button type="submit" class="btn btn-primary" style="margin-top: 10px;">업로드</button>
 		</form>
 	</div>
+	<jsp:include page="/include/footer.jsp"></jsp:include>
 </body>
 </html>

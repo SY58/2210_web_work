@@ -35,5 +35,6 @@
 			<button class="btn btn-primary" style="margin-top: 10px;" type="submit">로그인</button>
 		</form>
 	</div>
+	<jsp:include page="/include/footer.jsp"></jsp:include>
 </body>
 </html>

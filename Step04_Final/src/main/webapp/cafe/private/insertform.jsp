@@ -99,6 +99,7 @@
          var nFontSize = 24;
          oEditors.getById["content"].setDefaultFont(sDefaultFont, nFontSize);
       }
-   </script>   
+   </script>
+   <jsp:include page="/include/footer.jsp"></jsp:include>   
 </body>
 </html>

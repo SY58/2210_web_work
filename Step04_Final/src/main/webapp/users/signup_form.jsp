@@ -32,5 +32,6 @@
 			<button class="btn btn-outline-primary" style="margin-top: 10px;" type="submit">회원가입</button>			
 		</form>
 	</div>
+	<jsp:include page="/include/footer.jsp"></jsp:include>
 </body>
 </html>
