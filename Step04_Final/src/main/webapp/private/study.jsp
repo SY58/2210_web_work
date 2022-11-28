@@ -17,7 +17,9 @@
 	<jsp:param value="study" name="thisPage"/>
 	</jsp:include>
 	
-	<h1>공부 페이지입니다.</h1>
-	<p><%=id %> 님 열심히 공부해요!</p>
+	<div class="container">
+		<h1 style="margin: 20px 0px 20px; border-bottom:3px solid #0d6efd; padding:10px 0px 10px;">공부 페이지입니다.</h1>
+		<p><%=id %> 님 열심히 공부해요!</p>
+	</div>
 </body>
 </html>

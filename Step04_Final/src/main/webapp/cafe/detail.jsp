@@ -18,11 +18,22 @@
 <title>cafe/detail.jsp</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+	h3{
+		 margin: 10px 0px 10px; 
+		 border-bottom:3px solid #0dcaf0; 
+		 padding:5px 0px 5px;"
+	}
+</style>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="detail" name="thisPage"/>
+	</jsp:include>
+	
 	<div class="container">
 		<h3>글 상세 보기</h3>
-		<table>
+		<table class="table table-sm">
 			<tr>
 				<th>글번호</th>
 				<td><%=dto.getNum() %></td>

@@ -21,6 +21,11 @@
 		width: 768px;
 		height: 300px;
 	}	
+	h3{
+		 margin: 0px 0px 10px; 
+		 border-bottom:3px solid #0dcaf0; 
+		 padding:5px 0px 5px;"
+	}
 </style>
 </head>
 <body>

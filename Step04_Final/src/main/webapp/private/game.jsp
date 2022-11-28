@@ -17,7 +17,9 @@
 	<jsp:param value="game" name="thisPage"/>
 	</jsp:include>
 	
-	<h1>게임 페이지입니다.</h1>
-	<p><%=id %> 님 열심히 게임해요!</p>
+	<div class="container">
+		<h1 style="margin: 20px 0px 20px; border-bottom:3px solid #0d6efd; padding:10px 0px 10px;">게임 페이지입니다.</h1>
+		<p><%=id %> 님 열심히 게임해요!</p>
+	</div>
 </body>
 </html>

@@ -57,6 +57,11 @@
 <title>/file/private/list.jsp</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<style>
+	.link{
+		text-decoration-line: none;
+	}
+</style>
 </head>
 <body>
 	<jsp:include page="/include/navbar.jsp">
@@ -64,10 +69,10 @@
 	</jsp:include>
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/file/private/upload_form.jsp" class="btn btn-outline-primary" style="margin: 20px 0px 20px;">업로드 하기</a>
-		<h3>자료실 목록 보기</h3>
-		<table class="table table-striped">
-			<thead class="table-dark">
-				<tr>
+		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0d6efd; padding:5px 0px 5px;">자료실 목록 보기</h3>
+		<table class="table">
+			<thead>
+				<tr class="table-primary">
 					<th>번호</th>
 					<th>작성자</th>
 					<th>제목</th>
@@ -84,7 +89,7 @@
 					<td><%=tmp.getWriter() %></td>
 					<td><%=tmp.getTitle() %></td>
 					<td>
-						<a href="download.jsp?num=<%=tmp.getNum() %>"><%=tmp.getOrgFileName() %></a>
+						<a class="link" href="download.jsp?num=<%=tmp.getNum() %>"><%=tmp.getOrgFileName() %></a>
 					</td>
 					<td><%=tmp.getFileSize() %></td>
 					<td><%=tmp.getRegdate() %></td>

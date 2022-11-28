@@ -30,7 +30,7 @@
 	<jsp:param value="userinfo" name="thisPage"/>
 	</jsp:include>
    	<div class="container">
-      <h1>가입 정보 입니다.</h1>
+      <h1 style="border-bottom:3px solid #0d6efd; padding:10px 0px 10px;">가입 정보 입니다.</h1>
       <table class="table table-striped">
          <tr>
             <th>아이디</th>

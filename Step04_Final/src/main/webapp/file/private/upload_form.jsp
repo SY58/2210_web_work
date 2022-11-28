@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container">
-		<h3>파일 업로드 폼입니다.</h3>
+		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0d6efd; padding:5px 0px 5px;">파일 업로드 폼입니다.</h3>
 		<!--
 			파일 업로드 폼 작성방법
 			1. method="post"

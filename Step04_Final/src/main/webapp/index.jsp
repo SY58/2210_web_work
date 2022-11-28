@@ -20,7 +20,7 @@
 
 	<div class="container">
 		
-		<h1 style="margin: 20px 0px 20px;">인덱스 페이지입니다.</h1>
+		<h1 style="margin: 20px 0px 20px; border-bottom:3px solid #0d6efd; padding:10px 0px 10px;">인덱스 페이지입니다.</h1>
 		
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 		  <div class="carousel-indicators">
