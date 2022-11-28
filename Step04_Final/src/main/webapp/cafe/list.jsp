@@ -60,7 +60,7 @@
 	<jsp:param value="cafe" name="thisPage"/>
 	</jsp:include>
 	<div class="container">
-		<a href="${pageContext.request.contextPath }/cafe/private/insertform.jsp">새글 작성</a>
+		<a href="${pageContext.request.contextPath }/cafe/private/insertform.jsp" class="btn btn-outline-info" style="margin: 20px 0px 20px;">새글 작성</a>
 		<h3>카페 글 목록입니다.</h3>
 		<table class="table table-striped">
 			<thead class="table-info">

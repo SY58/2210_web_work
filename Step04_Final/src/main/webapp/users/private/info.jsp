@@ -52,7 +52,7 @@
          </tr>
          <tr>
             <th>비밀번호</th>
-            <td><a href="pwd_updateform.jsp">수정하기</a></td>
+            <td><a href="pwd_updateform.jsp" class="btn btn-outline-primary">수정하기</a></td>
          </tr>
          <tr>
             <th>이메일</th>
@@ -63,8 +63,8 @@
             <td><%=dto.getRegdate() %></td>
          </tr>
       </table>
-      <a href="updateform.jsp">개인정보 수정</a>
-      <a href="javascript:deleteConfirm().jsp">탈퇴</a>
+      <a href="updateform.jsp" class="btn btn-primary">개인정보 수정</a>
+      <a href="javascript:deleteConfirm().jsp" class="btn btn-outline-primary">탈퇴</a>
    </div>
    <script>
    		function deleteConfirm(){

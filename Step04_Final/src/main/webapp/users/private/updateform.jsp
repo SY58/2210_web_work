@@ -13,6 +13,8 @@
 <head>
 <meta charset="UTF-8">
 <title>/users/private/updateform.jsp</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <style>
 	/* 이미지 업로드 폼을 숨긴다 */
 	#imageForm{
@@ -23,13 +25,20 @@
 	   height: 100px;
 	   border: 1px solid #cecece;
 	   border-radius: 50%;
+	   margin: 10px 0px 10px;
+	}
+	.btn-primary{
+		margin-top: 10px;
+	}
+	.btn-outline-primary{
+		margin-top: 10px;
 	}
 </style>
 
 </head>
 <body>
 	<div class="container">
-		<h3>회원가입 수정 폼입니다.</h3>
+		<h3>회원정보 수정 폼입니다.</h3>
 		
 		<a id="profileLink" href="javascript:">
 			<%if(dto.getProfile() == null){%>
@@ -52,8 +61,8 @@
 				<label for="email">이메일</label>
 				<input type="text" id="email" name="email" value="<%=dto.getEmail() %>" />
 			</div>
-			<button type="submit">수정확인</button>
-			<button type="reset">취소</button>		
+			<button type="submit" class="btn btn-primary">수정확인</button>
+			<button type="reset" class="btn btn-outline-primary">취소</button>		
 		</form>
 		<form id="imageForm" action="profile_upload.jsp" method="post" enctype="multipart/form-data">
 			프로필 사진

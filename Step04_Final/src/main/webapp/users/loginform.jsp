@@ -32,7 +32,7 @@
 				<label for="pwd" class="form-label">비밀번호</label>
 				<input type="password" name="pwd" id="pwd" class="form-control" />
 			</div>
-			<button class="btn btn-primary" type="submit">로그인</button>
+			<button class="btn btn-primary" style="margin-top: 10px;" type="submit">로그인</button>
 		</form>
 	</div>
 </body>

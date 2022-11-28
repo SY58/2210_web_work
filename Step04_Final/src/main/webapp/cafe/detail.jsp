@@ -16,6 +16,8 @@
 <head>
 <meta charset="UTF-8">
 <title>cafe/detail.jsp</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
@@ -61,8 +63,8 @@
 		%>
 		<%-- 만일 글 작성자가 로그인된 아이디와 같다면 수정, 삭제 링크를 제공한다. --%>
 		<%if(dto.getWriter().equals(id)) {%>
-			<a href="private/updateform.jsp?num=<%=dto.getNum()%>">수정</a>
-			<a href="javascript:" onclick="deleteConfirm()">삭제</a>
+			<a href="private/updateform.jsp?num=<%=dto.getNum()%>" class="btn btn-outline-info" style="margin-top:10px;">수정</a>
+			<a href="javascript:" onclick="deleteConfirm()" class="btn btn-outline-info" style="margin-top:10px;">삭제</a>
 			<script>
 				function deleteConfirm(){
 					const isDelete=confirm("이 글을 삭제 하겠습니까?");

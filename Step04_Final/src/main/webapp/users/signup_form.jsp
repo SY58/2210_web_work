@@ -24,7 +24,7 @@
 				<label for="email" class="control-label">이메일</label>
 				<input type="text" class="form-control" name="email" id="email" />
 			</div>	
-			<button class="btn btn-outline-primary" type="submit">가입</button>			
+			<button class="btn btn-outline-primary" style="margin-top: 10px;" type="submit">회원가입</button>			
 		</form>
 	</div>
 </body>

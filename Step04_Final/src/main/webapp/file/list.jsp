@@ -63,7 +63,7 @@
 	<jsp:param value="file" name="thisPage"/>
 	</jsp:include>
 	<div class="container">
-		<a href="${pageContext.request.contextPath }/file/private/upload_form.jsp">업로드 하기</a>
+		<a href="${pageContext.request.contextPath }/file/private/upload_form.jsp" class="btn btn-outline-primary" style="margin: 20px 0px 20px;">업로드 하기</a>
 		<h3>자료실 목록 보기</h3>
 		<table class="table table-striped">
 			<thead class="table-dark">

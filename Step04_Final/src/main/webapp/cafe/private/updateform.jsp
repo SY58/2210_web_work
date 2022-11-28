@@ -14,11 +14,13 @@
 <head>
 <meta charset="UTF-8">
 <title>/cafe/private/updateform.jsp</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <style>
 	textarea{
 		width: 768px;
 		height: 300px;
-	}
+	}	
 </style>
 </head>
 <body>
@@ -35,8 +37,8 @@
 				<label for="content">내용</label>				
 				<textarea name="content" id="content"><%=dto.getContent() %></textarea>				
 			</div>
-			<button type="submit" onclick="submitContents(this)">수정확인</button>
-			<button type="reset">취소</button>
+			<button type="submit" onclick="submitContents(this)" class="btn btn-info">수정확인</button>
+			<button type="reset" class="btn btn-outline-info">취소</button>
 		</form>
 	</div>	
 	<!-- SmartEditor 에서 필요한 javascript 로딩  -->
