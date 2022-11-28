@@ -12,11 +12,19 @@
 		width: 768px;
 		height: 300px;
 	}
+	h3{
+		 margin: 10px 0px 10px; 
+		 border-bottom:3px solid #0dcaf0; 
+		 padding:5px 0px 5px;
+	}
 </style>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="cafeinsert" name="thisPage"/>
+	</jsp:include>
 	<div class="container">
-		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0dcaf0; padding:5px 0px 5px;">새글 작성 폼입니다.</h3>
+		<h3>새글 작성 폼입니다.</h3>
 		<form action="insert.jsp" method="post">
 			<div>
 				<label for="title">제목</label>

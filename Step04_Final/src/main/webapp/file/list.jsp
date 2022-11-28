@@ -72,7 +72,7 @@
 		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0d6efd; padding:5px 0px 5px;">자료실 목록 보기</h3>
 		<table class="table">
 			<thead>
-				<tr class="table-primary">
+				<tr class="table-primary text-center">
 					<th>번호</th>
 					<th>작성자</th>
 					<th>제목</th>
@@ -84,7 +84,7 @@
 			</thead>
 			<tbody>
 			<%for(FileDto tmp:list) {%>
-				<tr>
+				<tr class="text-center">
 					<td><%=tmp.getNum() %></td>
 					<td><%=tmp.getWriter() %></td>
 					<td><%=tmp.getTitle() %></td>

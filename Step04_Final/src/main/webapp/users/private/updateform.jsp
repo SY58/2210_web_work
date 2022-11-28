@@ -33,10 +33,18 @@
 	.btn-outline-primary{
 		margin-top: 10px;
 	}
+	
+	h3{
+		margin: 20px 0px 10px; 
+		border-bottom:3px solid #0d6efd; 
+		padding:5px 0px 5px;
+	}
 </style>
-
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="userupdate" name="thisPage"/>
+	</jsp:include>
 	<div class="container">
 		<h3>회원정보 수정 폼입니다.</h3>
 		

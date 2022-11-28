@@ -68,7 +68,7 @@
 		<a href="${pageContext.request.contextPath }/cafe/private/insertform.jsp" class="btn btn-outline-info" style="margin: 20px 0px 20px;">새글 작성</a>
 		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0dcaf0; padding:5px 0px 5px;">카페 글 목록입니다.</h3>
 		<table class="table">
-			<thead class="table-info">
+			<thead class="table-info text-center">
 				<tr>
 					<th>글번호</th>
 					<th>작성자</th>
@@ -79,7 +79,7 @@
 			</thead>
 			<tbody>
 				<%for(CafeDto tmp:list) {%>
-					<tr>
+					<tr class="text-center">
 						<td><%=tmp.getNum() %></td>
 						<td><%=tmp.getWriter() %></td>
 						<td>

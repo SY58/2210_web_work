@@ -14,6 +14,9 @@
 </style>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="signupform" name="thisPage"/>
+	</jsp:include>
 	<div class="container">
 		<h1>회원 가입 폼입니다.</h1>
 		<form action="signup.jsp" method="post">

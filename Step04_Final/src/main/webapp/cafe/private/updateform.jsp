@@ -29,6 +29,9 @@
 </style>
 </head>
 <body>
+	<jsp:include page="/include/navbar.jsp">
+	<jsp:param value="cafeupdate" name="thisPage"/>
+	</jsp:include>
 	<div class="container">
 		<h3>글 수정 폼입니다.</h3>
 		<form action="update.jsp" method="post">
