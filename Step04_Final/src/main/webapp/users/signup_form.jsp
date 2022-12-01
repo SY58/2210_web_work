@@ -61,7 +61,7 @@
 	        //입력한 이메일
 	        const inputEmail=this.value;
 	        //이메일을 검증할 정규 표현식 
-	        const reg=const reg=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;	                
+	        const reg=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;	                
 	        //만일 입력한 이메일이 정규표현식 검증을 통과하지 못했다면
 	        if(!reg.test(inputEmail)){
 	           this.classList.add("is-invalid");
