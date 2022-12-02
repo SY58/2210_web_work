@@ -15,7 +15,7 @@
 	<div class="container">		
 		<% if(id != null){ %>
 		<p>
-			<a href="${pageContext.request.contextPath }/users/private/detail.jsp">회원정보 보기</a>
+			<a href="${pageContext.request.contextPath }/users/private/info.jsp">회원정보 보기</a>
 		</p>
 		<p>
 			<a href="${pageContext.request.contextPath }/users/logout.jsp">로그아웃</a>
