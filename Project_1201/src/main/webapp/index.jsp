@@ -46,7 +46,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">GALLERY</h5>
 		        <p class="card-text">사진 갤러리</p>
-		        <a href="#" class="btn btn-warning">갤러리</a>
+		        <a href="${pageContext.request.contextPath }/file/list.jsp" class="btn btn-warning">갤러리</a>
 		      </div>
 		    </div>
 		  </div>
@@ -56,7 +56,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">USER LIST</h5>
 		        <p class="card-text">회원목록 보기</p>
-		        <a href="#" class="btn btn-warning">회원목록</a>
+		        <a href="${pageContext.request.contextPath }/private/userlist.jsp" class="btn btn-warning">회원목록</a>
 		      </div>
 		    </div>
 		  </div>

@@ -22,6 +22,54 @@ public class UsersDao {
 	}
 	
 	
+	//회원목록 보기	
+	public List<UsersDto> getList() {
+		//회원 목록을 담을 객체 생성
+		List<UsersDto> list = new ArrayList<>();
+
+		//필요한 객체를 담을 지역변수를 미리 만들어둔다.
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			//Connection Pool에서 Connection 객체를 하나 얻어온다.
+			conn = new DbcpBean().getConn();
+			//실행할 sql문의 뼈대 구성하기
+			String sql = "SELECT profile, id, email, regdate"
+					+ " FROM recipe_users"
+					+ " ORDER BY regdate DESC";
+			//sql문의 ?에 바인딩할게 있으면 한다.
+
+			pstmt = conn.prepareStatement(sql);
+			//SELECT문을 수행하고 결과값을 받아온다.
+			rs = pstmt.executeQuery();
+			//반복문 돌면서 resultSet에서 필요한 값을 얻어낸다.
+			while (rs.next()) {
+				UsersDto dto=new UsersDto();
+				dto.setProfile(rs.getString("profile"));
+				dto.setId(rs.getString("id"));
+				dto.setEmail(rs.getString("Email"));
+				dto.setRegdate(rs.getString("regdate"));
+				list.add(dto);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close(); //Connection Pool에 Connection 반납하기
+
+			} catch (Exception e2) {
+			}
+		}
+		return list;
+	}
+
+	
 	//개인정보(이메일) 수정 
 	public boolean update(UsersDto dto) {
 		Connection conn = null;
