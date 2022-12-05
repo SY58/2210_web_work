@@ -21,7 +21,7 @@ CREATE TABLE recipe_file(
 CREATE SEQUENCE recipe_file_seq; 
 
 -- 게시글을 저장할 테이블
-CREATE TABLE recipe_cafe(
+CREATE TABLE recipe_board(
 	num NUMBER PRIMARY KEY, --글번호
 	writer VARCHAR2(100) NOT NULL, --작성자(로그인된 아이디)
 	title VARCHAR2(100) NOT NULL, --제목

@@ -36,7 +36,7 @@
 		      <div class="card-body">
 		        <h5 class="card-title">RECIPE</h5>
 		        <p class="card-text">레시피 소개</p>
-		        <a href="" class="btn btn-warning">레시피 보기</a>
+		        <a href="${pageContext.request.contextPath }/board/list.jsp" class="btn btn-warning">레시피 보기</a>
 		      </div>
 		    </div>
 		  </div>
