@@ -33,7 +33,9 @@
 			<%for(BoardDto dto:list){ %>
 				<tr>				
 					<td><%=dto.getNum() %></td>
-					<td><%=dto.getTitle() %></td>
+					<td>
+						<a href="${pageContext.request.contextPath }/board/detail.jsp?num=<%=dto.getNum()%>"><%=dto.getTitle() %></a>
+					</td>
 					<td><%=dto.getWriter() %></td>
 					<td><%=dto.getViewCount() %></td>
 					<td><%=dto.getRegdate() %></td>				
