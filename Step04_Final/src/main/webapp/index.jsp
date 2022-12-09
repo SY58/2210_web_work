@@ -18,9 +18,7 @@
 </style>
 </head>
 <body>
-	<jsp:include page="/include/navbar.jsp">
-	<jsp:param value="index" name="thisPage"/>
-	</jsp:include>
+	<jsp:include page="/WEB-INF/include/navbar.jsp" />
 
 	<div class="container">
 		<%--
@@ -44,8 +42,6 @@
 	       		<a href="${pageContext.request.contextPath }/users/loginform.jsp">로그인</a>
 	       	</p>
 			</c:otherwise>
-
-
 		</c:choose>
 		
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">

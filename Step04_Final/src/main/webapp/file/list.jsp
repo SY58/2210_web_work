@@ -64,9 +64,10 @@
 </style>
 </head>
 <body>
-	<jsp:include page="/include/navbar.jsp">
-	<jsp:param value="file" name="thisPage"/>
-	</jsp:include>
+	<%-- 페이지를 include시킬 때는 WEB-INF 폴더에 있는 페이지도 include 가능하다. --%>
+	<jsp:include page="/WEB-INF/include/navbar.jsp">
+		<jsp:param value="file" name="thisPage"/>
+	</jsp:include>	
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/file/private/upload_form.jsp" class="btn btn-outline-primary" style="margin: 20px 0px 20px;">업로드 하기</a>
 		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0d6efd; padding:5px 0px 5px;">자료실 목록 보기</h3>

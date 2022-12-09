@@ -71,9 +71,10 @@
 </style>
 </head>
 <body>
-	<jsp:include page="/include/navbar.jsp">
-	<jsp:param value="cafe" name="thisPage"/>
+	<jsp:include page="/WEB-INF/include/navbar.jsp">
+		<jsp:param value="cafe" name="thisPage"/>
 	</jsp:include>
+	
 	<div class="container">
 		<a href="${pageContext.request.contextPath }/cafe/private/insertform.jsp" class="btn btn-outline-info" style="margin: 20px 0px 20px;">새글 작성</a>
 		<h3 style="margin: 0px 0px 10px; border-bottom:3px solid #0dcaf0; padding:5px 0px 5px;">카페 글 목록입니다.</h3>
@@ -106,18 +107,18 @@
 				<%-- startPageNum이 1이 아닌 경우에만 Prev링크를 제공한다. --%>
 				<c:if test="${startPageNum ne 1 }">
 					<li class="page-item">
-						<a class="page-link" href="list.jsp?pageNum=${startPageNum-1 }">Prev</a>
+						<a class="page-link" href="list2.jsp?pageNum=${startPageNum-1 }">Prev</a>
 					</li>
 				</c:if>				
 				<c:forEach var="i" begin="${startPageNum }" end="${endPageNum}">				
 					<li class="page-item ${pageNum == i ? 'active' : '' }">
-						<a class="page-link" href="list.jsp?pageNum=${i}">${i}</a>
+						<a class="page-link" href="list2.jsp?pageNum=${i}">${i}</a>
 					</li>							
 				</c:forEach>				
 				<%-- 마지막 페이지 번호가 전체 페이지의 갯수보다 작으면 Next링크를 제공한다. --%>
 				<c:if test="${endPageNum lt totalPageCount }">				
 					<li class="page-item">
-						<a class="page-link" href="list.jsp?pageNum=${endPageNum+1}">Next</a>
+						<a class="page-link" href="list2.jsp?pageNum=${endPageNum+1}">Next</a>
 					</li>
 				</c:if>				
 			</ul>
