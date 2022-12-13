@@ -44,6 +44,11 @@
 			</c:otherwise>
 		</c:choose>
 		
+		<p>
+			<a href="${pageContext.request.contextPath }/my_app/index.html">React 테스트</a><br />
+			<a href="${pageContext.request.contextPath }/users/signup_form4.jsp">React 테스트2(회원가입 폼)</a>
+		</p>
+		
 		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
 		  <div class="carousel-indicators">
 		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

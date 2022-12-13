@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Step04_Final/users/static/css/main.e6c13ad2.css",
+    "main.js": "/Step04_Final/users/static/js/main.43662763.js",
+    "static/js/787.856e1621.chunk.js": "/Step04_Final/users/static/js/787.856e1621.chunk.js",
+    "index.html": "/Step04_Final/users/index.html",
+    "main.e6c13ad2.css.map": "/Step04_Final/users/static/css/main.e6c13ad2.css.map",
+    "main.43662763.js.map": "/Step04_Final/users/static/js/main.43662763.js.map",
+    "787.856e1621.chunk.js.map": "/Step04_Final/users/static/js/787.856e1621.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.43662763.js"
+  ]
+}
